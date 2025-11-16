@@ -19,7 +19,7 @@ Created on Sun Nov 16 19:52:52 2025
 # or  - kamida bittasi to'g'ri bo'lsa kifoya
 
 
-print("Kinoga kirish qoidalari:")
+print("Kinoga kirish qoidalari!")
 yosh=int(input("Yoshingizni kiriting: "))
 pul=float(input("Pulingizni kiriting: ")) 
 if yosh>=13 and pul>=50000:
@@ -27,7 +27,10 @@ if yosh>=13 and pul>=50000:
     
 else:
     print("Kirishga ruxsat yo'q!")
-    
+    if yosh < 13:
+        print("Sabab: Yoshingiz yetarli emas")
+    if pul < 50000:
+        print("Sabab: Pulingiz yetarli emas")
 
 
 
